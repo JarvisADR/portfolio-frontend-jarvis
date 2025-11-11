@@ -23,16 +23,15 @@ const AppHeader = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${ // Tambah ease-in-out
-      headerScrolled ? 'bg-background/90 backdrop-blur-lg border-b border-border/50' : 'bg-transparent' // Ubah opacity, blur, border color, dan state tidak scrolled
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+      headerScrolled ? 'bg-background/90 backdrop-blur-lg border-b border-border/50' : 'bg-transparent'
     }`}>
-      <nav className="container mx-auto px-6 h-16 flex items-center justify-between"> {/* Atur tinggi header */}
-        <div className="text-lg font-semibold text-foreground tracking-tight"> {/* Ubah style font */}
+      <nav className="container mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="text-lg font-semibold text-foreground tracking-tight">
           Jarvis Adriel
         </div>
 
-        <div className="hidden md:flex items-center space-x-6"> {/* Ubah space */}
-          {/* Ubah button menjadi link atau style berbeda */}
+        <div className="hidden md:flex items-center space-x-6">
           <button
             onClick={() => handleNavClick('about')}
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -61,14 +60,13 @@ const AppHeader = () => {
           </Button>
         </div>
 
-        {/* Mobile menu button - Gunakan icon */}
         <Button
           variant="ghost"
           size="icon"
           className="md:hidden text-foreground"
           aria-label="Toggle menu"
         >
-          <Menu className="w-5 h-5" /> {/* Gunakan Menu icon */}
+          <Menu className="w-5 h-5" />
         </Button>
       </nav>
     </header>

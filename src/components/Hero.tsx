@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Mail, Instagram } from 'lucide-react';
-import heroBackground from '@/assets/security-background.jpg';
 
 const HeroSection = () => {
   const handleScrollToSection = (sectionId: string) => {
@@ -9,12 +8,6 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative text-center"> {/* Tambahkan text-center di sini */}
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-        style={{backgroundImage: `url(${heroBackground})`}}
-      ></div>
-
       {/* Konten ditengah */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
